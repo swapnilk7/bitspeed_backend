@@ -1,3 +1,7 @@
+# Live Server URL
+
+    - https://bitspeed-backend.onrender.com
+
 # Add .env config
 
 - Create .env file and the following configuration
