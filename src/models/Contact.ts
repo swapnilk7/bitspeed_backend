@@ -12,13 +12,13 @@ export interface IContact extends Document {
 }
 
 const ContactSchema = new Schema<IContact>({
-  phoneNumber: { type: String, required: false },
-  email: { type: String, required: false },
+  phoneNumber: { type: String, required: true },
+  email: { type: String, required: true },
   linkedId: { type: String, required: false, default: null },
   linkPrecedence: {
     type: String,
     enum: ["primary", "secondary"],
-    required: true,
+    default: "primary",
   },
   createdAt: { type: Date, required: true, default: Date.now },
   updatedAt: { type: Date, required: true, default: Date.now },

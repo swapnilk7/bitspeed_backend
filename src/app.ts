@@ -1,11 +1,10 @@
-// app.ts
-import express from "express";
-import bodyParser from "body-parser";
 import { connectDB } from "./config/database";
+const express = require("express");
+
 import routes from "./routes/routes";
 
 const app = express();
-app.use(bodyParser.json());
+app.use(express.json());
 
 // Connect to MongoDB
 connectDB();
