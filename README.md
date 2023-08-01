@@ -1,6 +1,15 @@
 # Live Server URL
 
     - https://bitspeed-backend.onrender.com
+    
+# Endpoint
+
+    - /identify (POST request)
+    - request body:
+            {
+	        "email"?: string,
+	        "phoneNumber"?: number
+            }
 
 # Add .env config
 
